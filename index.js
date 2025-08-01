@@ -1,8 +1,8 @@
 import express from 'express';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
-import routes from '../routes/route.js'; // rotas externas
-import { createServer } from 'http';
+import routes from './routes/route.js'; // rotas externas
+
 
 const app = express();
 
@@ -14,8 +14,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // Servir arquivos estáticos
-app.use(express.static(join(__dirname, '../public')));
-app.set('views', join(__dirname, '../views'));
+app.use(express.static(join(__dirname, '/public')));
+app.set('views', join(__dirname, '/views'));
 
 // Rotas
 app.use(routes)
