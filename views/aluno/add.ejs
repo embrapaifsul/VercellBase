@@ -1,0 +1,25 @@
+<%-include('../cabecalho.ejs')%>
+<h1>Adicionar Aluno</h1>
+<form method="post">
+    <div class="form-group">
+        Nome: <input type="text" name="nome" id="nome"><br>
+    </div>
+        <div class="form-group">
+        Matrícula: <input type="text" name="matricula" id="matricula"><br>
+    </div>
+        <div class="form-group">
+        Curso: 
+        <select name="curso" id="" class="form-control">
+            <option value="">selecione</option>
+            <!--opções-->
+            <option value=""></option>
+        </select>
+    </div>
+     <button type="submit" class="btn">Salvar</button>
+     <a href="/aluno/lst" class="btn cancelar">Cancelar</a>
+  
+</form>
+
+
+
+<%-include('../rodape.ejs')%>

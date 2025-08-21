@@ -1,0 +1,16 @@
+<%-include('../cabecalho.ejs')%>
+<h1>Editar Aluno</h1>
+<form method="post">
+    <input type="hidden" name="id" value="<%=Aluno.id%>">
+    <div class="form-group">
+        Nome: <input type="text" name="nome" id="nome" value="<%=Aluno.nome%>"><br>
+    </div>
+    
+     <button type="submit" class="btn">Salvar</button>
+     <a href="/aluno/lst" class="btn cancelar">Cancelar</a>
+  
+</form>
+
+
+
+<%-include('../rodape.ejs')%>
