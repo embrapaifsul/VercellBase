@@ -2,10 +2,11 @@ import express from 'express';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import routes from './routes/route.js'; // rotas externas
+import alunoRoutes from './routes/AlunoRoutes.js'; // rotas externas
 
 
 const app = express();
-
+app.use(alunoRoutes)
 app.use(express.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
 
