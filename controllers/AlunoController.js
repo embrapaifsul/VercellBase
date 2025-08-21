@@ -13,8 +13,8 @@ export default class AlunoController{
             //cria o Aluno
            
             await Aluno.create({
-                nome: 'req.body.nome',
-                matricula:'req.body.matricula'
+                nome: req.body.nome,
+                matricula:req.body.matricula
             });
             res.redirect('/'+caminhoBase + 'add');
         }
