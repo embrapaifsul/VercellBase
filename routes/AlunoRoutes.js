@@ -1,5 +1,6 @@
 import express from 'express';
 const router = express.Router();
+
 import AlunoController from '../controllers/AlunoController.js'
 
 const caminhoBase = "aluno/"

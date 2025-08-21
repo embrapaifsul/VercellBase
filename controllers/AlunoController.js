@@ -12,7 +12,7 @@ export default class AlunoController{
 
         this.add = async(req, res)=>{
             //cria o Aluno
-            await Aluno.create({
+                        await Aluno.create({
                 nome: req.body.nome,
                 matricula:req.body.matricula
             });
