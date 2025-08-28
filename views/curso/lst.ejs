@@ -1,17 +1,17 @@
 <%-include('../cabecalho.ejs')%>
-    <h1>Alunos</h1>
-    <a href="/aluno/add">+ Aluno</a>
+    <h1>Cursos</h1>
+    <a href="/curso/add">+ Curso</a>
     <table>
         <tr>
             <td>Nome</td>
-            <td>Matrícula</td>
+            <td>Nível</td>
             <td>Ações</td>
         </tr>
       
-        <%for (const {nome, matricula} of Alunos) {%>
+        <%for (const {nome, nivel} of Cursos) {%>
         <tr>
             <td><%=nome%></td>
-            <td><%=matricula%></td>
+            <td><%=nivel%></td>
             <td></td>
         </tr>
         <%}%>
