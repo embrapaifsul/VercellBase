@@ -25,6 +25,13 @@ export default class CursoController{
             res.render(caminhoBase + 'lst', {Cursos:resultado})
         }
 
+         this.openEdt = async(req, res)=>{
+            //passar quem eu quero editar
+            const id = req.params.id
+            const aluno = 
+            res.render(caminhoBase + "edt")
+        }
+
         
 
     }
